@@ -19,14 +19,16 @@
 
   function getCurrentPage() {
     const path = window.location.pathname;
-    if (path.endsWith('/') || path === '') return 'index.html';
+    if (path.endsWith('/') || path === '' || path === '/') return 'index.html';
     const parts = path.split('/');
-    return parts[parts.length - 1] || 'index.html';
+    const last = parts[parts.length - 1];
+    return last || 'index.html';
   }
 
   function getContentPath(filename) {
     const base = window.location.pathname;
-    const dir = base.substring(0, base.lastIndexOf('/') + 1);
+    const lastSlash = base.lastIndexOf('/');
+    const dir = lastSlash >= 0 ? base.substring(0, lastSlash + 1) : './';
     return (dir || './') + CONTENT_BASE + filename;
   }
 
