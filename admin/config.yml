@@ -1,0 +1,128 @@
+# Decap CMS Configuration
+# Update backend.repo and site_url for your deployment
+
+# Replace owner/repo with your GitHub org/repo (e.g. yourorg/cybersecurity-site)
+# For Cloudflare Pages: deploy decap-proxy Worker and set base_url. See README.
+backend:
+  name: github
+  repo: owner/repo
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://yoursite.com  # Replace with production URL
+display_url: https://yoursite.com
+
+collections:
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Site Settings"
+        name: "settings"
+        file: "content/settings.json"
+        fields:
+          - { label: "Site Name", name: "site_name", widget: "string" }
+          - { label: "Footer Text", name: "footer_copy", widget: "string" }
+
+  - label: "Home"
+    name: "home"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero CTA Text", name: "hero_cta_text", widget: "string" }
+          - { label: "Value Props Heading", name: "value_props_heading", widget: "string" }
+          - { label: "Value Props Intro", name: "value_props_intro", widget: "string" }
+          - { label: "Value Prop 1 Title", name: "value_prop_1_title", widget: "string" }
+          - { label: "Value Prop 1 Description", name: "value_prop_1_desc", widget: "text" }
+          - { label: "Value Prop 2 Title", name: "value_prop_2_title", widget: "string" }
+          - { label: "Value Prop 2 Description", name: "value_prop_2_desc", widget: "text" }
+          - { label: "Value Prop 3 Title", name: "value_prop_3_title", widget: "string" }
+          - { label: "Value Prop 3 Description", name: "value_prop_3_desc", widget: "text" }
+          - { label: "CTA Heading", name: "cta_heading", widget: "string" }
+          - { label: "CTA Text", name: "cta_text", widget: "text" }
+
+  - label: "About"
+    name: "about"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/about.json"
+        fields:
+          - { label: "Hero Title", name: "about_hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "about_hero_subtitle", widget: "text" }
+          - { label: "Mission Title", name: "mission_title", widget: "string" }
+          - { label: "Mission Text", name: "mission_text", widget: "text" }
+          - { label: "Story Title", name: "story_title", widget: "string" }
+          - { label: "Story Paragraph 1", name: "story_para_1", widget: "text" }
+          - { label: "Story Paragraph 2", name: "story_para_2", widget: "text" }
+          - { label: "Story Paragraph 3", name: "story_para_3", widget: "text" }
+          - { label: "CTA Title", name: "about_cta_title", widget: "string" }
+          - { label: "CTA Text", name: "about_cta_text", widget: "text" }
+          - { label: "CTA Button", name: "about_cta_btn", widget: "string" }
+
+  - label: "Services"
+    name: "services"
+    files:
+      - label: "Services Page"
+        name: "services"
+        file: "content/services.json"
+        fields:
+          - { label: "Hero Title", name: "services_hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "services_hero_subtitle", widget: "text" }
+          - { label: "Intro Title", name: "services_intro_title", widget: "string" }
+          - { label: "Intro Text", name: "services_intro_text", widget: "text" }
+          - { label: "Service 1 Title", name: "service_1_title", widget: "string" }
+          - { label: "Service 1 Description", name: "service_1_desc", widget: "text" }
+          - { label: "Service 2 Title", name: "service_2_title", widget: "string" }
+          - { label: "Service 2 Description", name: "service_2_desc", widget: "text" }
+          - { label: "Service 3 Title", name: "service_3_title", widget: "string" }
+          - { label: "Service 3 Description", name: "service_3_desc", widget: "text" }
+          - { label: "Service 4 Title", name: "service_4_title", widget: "string" }
+          - { label: "Service 4 Description", name: "service_4_desc", widget: "text" }
+          - { label: "Service 5 Title", name: "service_5_title", widget: "string" }
+          - { label: "Service 5 Description", name: "service_5_desc", widget: "text" }
+          - { label: "Service 6 Title", name: "service_6_title", widget: "string" }
+          - { label: "Service 6 Description", name: "service_6_desc", widget: "text" }
+          - { label: "CTA Title", name: "services_cta_title", widget: "string" }
+          - { label: "CTA Text", name: "services_cta_text", widget: "text" }
+          - { label: "CTA Button", name: "services_cta_btn", widget: "string" }
+
+  - label: "Case Studies"
+    name: "case-studies"
+    files:
+      - label: "Case Studies Page"
+        name: "case-studies"
+        file: "content/case-studies.json"
+        fields:
+          - { label: "Hero Title", name: "casestudies_hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "casestudies_hero_subtitle", widget: "text" }
+          - { label: "Intro Title", name: "casestudies_intro_title", widget: "string" }
+          - { label: "Intro Text", name: "casestudies_intro_text", widget: "text" }
+          - { label: "Case 1 Title", name: "case_1_title", widget: "string" }
+          - { label: "Case 1 Description", name: "case_1_desc", widget: "text" }
+          - { label: "Case 2 Title", name: "case_2_title", widget: "string" }
+          - { label: "Case 2 Description", name: "case_2_desc", widget: "text" }
+          - { label: "Case 3 Title", name: "case_3_title", widget: "string" }
+          - { label: "Case 3 Description", name: "case_3_desc", widget: "text" }
+          - { label: "CTA Title", name: "casestudies_cta_title", widget: "string" }
+          - { label: "CTA Text", name: "casestudies_cta_text", widget: "text" }
+          - { label: "CTA Button", name: "casestudies_cta_btn", widget: "string" }
+
+  - label: "Contact"
+    name: "contact"
+    files:
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/contact.json"
+        fields:
+          - { label: "Hero Title", name: "contact_hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "contact_hero_subtitle", widget: "text" }
+          - { label: "Intro Title", name: "contact_intro_title", widget: "string" }
+          - { label: "Intro Text", name: "contact_intro_text", widget: "text" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Contact Info Rest", name: "contact_info_rest", widget: "string" }
