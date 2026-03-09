@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="heroGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(59,130,246,0.06)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#grid)"/>
+  <path d="M400 50 L550 150 L550 350 L250 350 L100 250 L100 50 Z" fill="url(#heroGrad1)"/>
+  <path d="M500 80 L580 120 L580 280 L380 320 L300 200 Z" fill="url(#heroGrad2)"/>
+  <circle cx="480" cy="180" r="80" fill="none" stroke="rgba(59,130,246,0.08)" stroke-width="1"/>
+  <circle cx="480" cy="180" r="120" fill="none" stroke="rgba(59,130,246,0.04)" stroke-width="1"/>
+</svg>

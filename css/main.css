@@ -130,13 +130,22 @@ p {
 }
 
 .header__logo {
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 1.125rem;
   font-weight: 600;
   color: var(--color-text);
 }
 
 .header__logo:hover {
   color: var(--color-text);
+}
+
+.header__logo-img {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent-light);
 }
 
 /* Nav */
@@ -325,6 +334,12 @@ p {
 
 .btn--outline:hover {
   background: rgba(37, 99, 235, 0.1);
+}
+
+.btn--lg {
+  padding: var(--space-md) var(--space-xl);
+  font-size: 1rem;
+  min-height: 52px;
 }
 
 /* --- Sections --- */

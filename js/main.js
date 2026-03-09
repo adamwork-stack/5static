@@ -91,7 +91,10 @@
     container.innerHTML = `
       <header class="header">
         <div class="container header__inner">
-          <a href="index.html" class="header__logo" data-cms="site_name">Cybersecurity Consulting</a>
+          <a href="index.html" class="header__logo">
+            <img src="images/logo.svg" alt="" class="header__logo-img" aria-hidden="true">
+            <span data-cms="site_name">Cybersecurity Consulting</span>
+          </a>
           <nav class="nav" aria-label="Main navigation" id="nav-desktop"></nav>
           <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Toggle menu">
             <span class="nav-toggle__bar"></span>

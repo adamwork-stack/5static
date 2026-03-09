@@ -16,10 +16,13 @@
 
   <main class="page__main">
     <!-- Hero -->
-    <section class="hero" style="min-height: 40vh;">
+    <section class="hero hero--short hero--compact">
+      <div class="hero__bg" aria-hidden="true"><img src="images/hero-graphic.svg" alt="" class="hero__graphic"></div>
       <div class="container hero__inner">
-        <h1 class="hero__title" data-cms="casestudies_hero_title">Case Studies</h1>
-        <p class="hero__subtitle" data-cms="casestudies_hero_subtitle">Representative engagements and outcomes. All details anonymized for confidentiality.</p>
+        <div class="hero__content">
+          <h1 class="hero__title" data-cms="casestudies_hero_title">Case Studies</h1>
+          <p class="hero__subtitle" data-cms="casestudies_hero_subtitle">Representative engagements and outcomes. All details anonymized for confidentiality.</p>
+        </div>
       </div>
     </section>
 
@@ -32,17 +35,17 @@
         </div>
         <div class="value-props" id="case-studies-list">
           <div class="value-prop">
-            <div class="value-prop__icon">01</div>
+            <div class="value-prop__icon"><img src="images/icon-compliance.svg" alt="" width="24" height="24"></div>
             <h3 class="value-prop__title" data-cms="case_1_title">FinTech — SOC 2 Type II Readiness</h3>
             <p class="value-prop__desc" data-cms="case_1_desc">Led gap assessment and control implementation for a Series B startup. Achieved SOC 2 Type II in 6 months, enabling enterprise sales.</p>
           </div>
           <div class="value-prop">
-            <div class="value-prop__icon">02</div>
+            <div class="value-prop__icon"><img src="images/icon-shield.svg" alt="" width="24" height="24"></div>
             <h3 class="value-prop__title" data-cms="case_2_title">Healthcare — HIPAA Compliance</h3>
             <p class="value-prop__desc" data-cms="case_2_desc">Conducted risk analysis and remediation for a regional provider. Implemented policies, BAAs, and technical safeguards to satisfy HIPAA requirements.</p>
           </div>
           <div class="value-prop">
-            <div class="value-prop__icon">03</div>
+            <div class="value-prop__icon"><img src="images/icon-response.svg" alt="" width="24" height="24"></div>
             <h3 class="value-prop__title" data-cms="case_3_title">Manufacturing — Incident Response</h3>
             <p class="value-prop__desc" data-cms="case_3_desc">Supported ransomware incident containment and recovery. Coordinated with legal and insurance, restored systems within 72 hours.</p>
           </div>

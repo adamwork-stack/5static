@@ -15,19 +15,27 @@
 
   <main class="page__main">
     <!-- Hero -->
-    <section class="hero" style="min-height: 50vh;">
+    <section class="hero hero--short">
+      <div class="hero__bg" aria-hidden="true"><img src="images/hero-graphic.svg" alt="" class="hero__graphic"></div>
       <div class="container hero__inner">
-        <h1 class="hero__title" data-cms="about_hero_title">About Us</h1>
-        <p class="hero__subtitle" data-cms="about_hero_subtitle">We bring decades of combined experience in enterprise security, risk management, and compliance to help organizations protect what matters most.</p>
+        <div class="hero__content">
+          <h1 class="hero__title" data-cms="about_hero_title">About Us</h1>
+          <p class="hero__subtitle" data-cms="about_hero_subtitle">We bring decades of combined experience in enterprise security, risk management, and compliance to help organizations protect what matters most.</p>
+        </div>
       </div>
     </section>
 
     <!-- Mission -->
     <section class="section section--alt">
       <div class="container">
-        <div class="section__header">
-          <h2 class="section__title" data-cms="mission_title">Our Mission</h2>
-          <p class="section__subtitle" data-cms="mission_text">We provide pragmatic, no-nonsense cybersecurity guidance. Our goal is to reduce risk, ensure compliance, and enable our clients to operate with confidence.</p>
+        <div class="about-mission">
+          <div class="about-mission__visual" aria-hidden="true">
+            <img src="images/icon-shield.svg" alt="" width="64" height="64" class="about-mission__icon">
+          </div>
+          <div class="section__header">
+            <h2 class="section__title" data-cms="mission_title">Our Mission</h2>
+            <p class="section__subtitle" data-cms="mission_text">We provide pragmatic, no-nonsense cybersecurity guidance. Our goal is to reduce risk, ensure compliance, and enable our clients to operate with confidence.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -35,11 +43,16 @@
     <!-- Story / Team -->
     <section class="section">
       <div class="container">
-        <div style="max-width: 720px;">
+        <div class="about-story">
           <h2 class="section__title" data-cms="story_title">Our Approach</h2>
           <p data-cms="story_para_1">We founded this firm after years of watching organizations struggle with fragmented security programs, checkbox compliance, and vendors selling solutions before understanding the problem.</p>
           <p data-cms="story_para_2">We take a different approach: we listen first. We assess your environment, understand your business objectives, and then build a strategy that fits. No cookie-cutter playbooks. No unnecessary tooling. Just clear, actionable guidance.</p>
           <p data-cms="story_para_3">Our consultants hold certifications including CISSP, CISM, and OSCP, and have led security programs at Fortune 500 companies and high-growth startups alike.</p>
+        </div>
+        <div class="about-certifications">
+          <span class="about-cert__badge">CISSP</span>
+          <span class="about-cert__badge">CISM</span>
+          <span class="about-cert__badge">OSCP</span>
         </div>
       </div>
     </section>
